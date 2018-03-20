@@ -93,3 +93,14 @@ At the start of the game, generate five random numbers. A number displayed in th
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
   </html>
+
+
+
+if totalCrystalValue === randomComputerNumber;
+  user wins;
+if totalCrystalValue < randomComputerNumber;
+  user clicks another crystal icon to add to existing value;
+else totalCrystalValue > randomComputerNumber;
+  user loses;
+
+  gameReset();
