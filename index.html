@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Week 4 Game</title>
+      <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- reset css -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <!-- style.css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Added a link to Bootstrap-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Crystal Collector</title>
+
 </head>
 <body>
-    <h1>Let's assume there will be an AWESOME app here soon.</h1>
+    <!--title-->
+  <div class="jumbotron opacity">
+    <h1 class='elegantshadow'>Crystal Collector</h1>
+    <br><br>
+    <h2 class="text-center">Use invisible random numbers to match the computer's randomly chosen number!</h2>
+  </div>
+  <!-- rules -->
+  <div class="container-flex p-4 mx-3">
+    <div class="col-lg-12">
+      <div class="card">
+        <h3 class="card-header text-center ">How to play</h3>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">1. The computer has generated five random numbers. One that you can see below and four that are hidden in the gemstones.</li>
+            <li class="list-group-item">2. Use the gemstones to match the computer's number. Clicking on the gemstones will reveal it's secret value and add points to your crystal score.</li>
+            <li class="list-group-item">3. You can win the game by matching your crystal score to the computer's random number. You'll lose the game if your crystal score is greater than the random number.</li>
+            <li class="list-group-item">4. After each game, all the random values will be reset.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- info boxes -->
+  <div class="container-flex row p-4 mx-3">
+    <div class="col-md-4 mb-2">
+      <div class="card">
+        <h3 class="card-header text-center">Random Number</h3>
+        <div class="card-body">
+          <h1 id="numToGuess"></h1>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-2">
+      <div class="card">
+        <h3 class="card-header text-center">Crystal Score</h3>
+        <div class="card-body">
+          <h1 id="totalNum"></h1>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-2">
+      <div class="card">
+        <h3 class="card-header text-center">Wins & Loses</h3>
+        <div class="card-body row justify">
+          <h3>Wins: <span id="wins"></span></h3>
+          <h3>Losses: <span id="losses"></span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- crystal pics for click event-->
+  <div class="container-flex opacity p-4 mx-3 mb-4">
+    <div class="card">
+      <h3 class="card-header text-center">Crystal Collection</h3>
+      <div class="row">
+        <div class="col-3">
+          <div class="img">
+            <img id="purple" src="image/purple.png" alt="purple">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="img">
+            <img id="green" src="image/green.png" alt="green">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="img">
+            <img id="pink" src="image/pink.png" alt="pink">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="img">
+            <img id="blue" src="image/blue.png" alt="blue">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="javascript/app.js"></script>
 </body>
 </html>
